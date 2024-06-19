@@ -1,50 +1,54 @@
 /* Aplicando em todos os elementos*/
-fieldset {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset{
     border: 0;
 }
 body {
     background-color: white;
     font-family: sans-serif;
     font-size: 1em;
-    color: blue;
+    color: black;
     margin-left: 36%;
     margin-top: 2%;
     justify-content: center;
-
+    
 }
 
 input, select, button {
     background-color: white;
     font-family: sans-serif;
     font-size: 1em;
-    color: blue;
-    margin-left: 36%;
+    color: black;
+    margin-left: 20%;
     border-radius: 5px;
-    
-}
-
-.Campo {
-    margin-bottom: 1em;
-}
-.Campo label {
-    margin-bottom: 0.2em;
-    color: blue;
     display: block;
 }
 
+.Campo {
+    margin-bottom: 10px;
+}
+.Campo label {
+    margin-bottom: 0.2em;
+    color: black;
+    display: inline-block;
+}
+.grupo::before, .grupo:after {
+    display: table;
+}
+
+.grupo:after{
+    clear: both;
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
 
 
 
-/* Todos os H1 receberão esses estilo */
-/* h1 {
-    background-color: blue;
-} */
-/* O id título receberá esse estilo */
-/* #titulo {
-    background-color: rgb(27, 179, 7);
-} */
-/* A Classe */
-/* .subtitulo {
-    background-color: brown;
-} */
 
